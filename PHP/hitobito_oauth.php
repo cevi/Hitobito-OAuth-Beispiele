@@ -62,6 +62,7 @@ if(isset($_GET['code'])) {
     ));
     $_SESSION['access_token'] = $token->access_token;
     $_SESSION['token'] = $token; // store full token response for demo purpose
+    $_SESSION['code'] = $_GET['code']; // store code for demo purpose
     header('Location: ' . $_SERVER['PHP_SELF']);
 }
 
@@ -69,6 +70,8 @@ if(isset($_SESSION['access_token'])) {
     echo '<h3>Logged In</h3>';
     echo '<p><a href="?action=logout">Log Out</a></p>';
     echo '<pre>';
+    echo '<p>Code:</p>';
+    print_r($_SESSION['code']);
     echo '<p>Token:</p>';
     print_r($_SESSION['token']);
     echo '<p>Profile (Scope email):</p>';
