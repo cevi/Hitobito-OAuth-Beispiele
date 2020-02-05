@@ -1,8 +1,8 @@
 # OAuth Login mit Hitobito
-Hitobito bietet ab der version 1.20 eine OAuth Schnittstelle. Um OAuth Applikationen zu erfassen ist eine Administrationsrolle auf der obersten Ebene erforderlich. Die die offizielle Dokumentation der Schnittstelle: [hitobito/doc/development/08_oauth.md](https://github.com/hitobito/hitobito/blob/master/doc/development/08_oauth.md)
+Hitobito bietet ab der Version 1.20 eine OAuth Schnittstelle. Um OAuth Applikationen zu erfassen ist eine Administrationsrolle auf der obersten Ebene erforderlich. Die die offizielle Dokumentation der Schnittstelle: [hitobito/doc/development/08_oauth.md](https://github.com/hitobito/hitobito/blob/master/doc/development/08_oauth.md)
 
 ## Beispiel mit PHP
-Hier findet sich eine einfache Implementation mit PHP: [PHP/hitobito_oauth.php](PHP/hitobito_oauth.php)
+Hier findet sich eine Beispiel Implementation mit PHP: [PHP/hitobito_oauth.php](PHP/hitobito_oauth.php)
 Das Beispiel ist [Hier](https://laettere.ch/dev/hitobito_oauth.php) aufgeschalten und mit der CeviDB Integrations Umgebung [cevi.puzzle.ch](https://cevi.puzzle.ch) verknüpft.
 
 ### Konfiguration
