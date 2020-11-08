@@ -47,7 +47,7 @@ if(isset($_GET['action']) && ($_GET['action'] == 'logout')) {
 // when hitobito redirects the user back here, there will be a "code" and "state" parameter in the query string
 if(isset($_GET['code'])) {
     // verify the state matches our stored state
-    if(!isset($_GET['state']) || $_SESSION['state'] != isset($_GET['state'])) {
+    if(!isset($_GET['state']) || $_SESSION['state'] != $_GET['state']) {
         header('Location: ' . $_SERVER['PHP_SELF']);
         die();
     }
